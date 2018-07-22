@@ -1,0 +1,89 @@
+
+  <div ng-controller="deliverCtrl" ng-app="milkyWay">
+    <div class="headerDiv">
+      <h1 class="headerText">Price</h1>
+    </div>
+      <div layout-gt-sm="row">
+        <div class="listItem">
+          <!-- <div class="itemList">
+            <div class="">
+                <p class="" style="margin-bottom:0px">1/2 liter</p>
+            </div>
+            <div class="">
+                20rs <span><button class="menuBtn btn"><i class="fa fa-pencil" aria-hidden="true"></i></button></span>
+            </div>
+          </div>
+          <div class="itemList">
+            <div class="">
+                <p class="" style="margin-bottom:0px">1 liter</p>
+            </div>
+            <div class="">
+                20rs <span><button class="menuBtn btn"><i class="fa fa-pencil" aria-hidden="true"></i></button></span>
+            </div>
+          </div> -->
+          <div class="itemList">
+            <div class="">
+                <p class="quantityText">1/2 liter</p>
+            </div>
+            <div class="">
+                <div ng-hide="editorEnabled">
+                    <div class="rateDiv">{{halfLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
+                </div>
+                <div class="" ng-show="editorEnabled">
+                    <input class="priceInput" ng-model="halfLiter" ng-show="editorEnabled" style="width:55px;">
+                </div>
+          </div>
+
+        </div>
+          <div class="itemList">
+            <div class="">
+                <p class="quantityText">1 liter</p>
+            </div>
+            <div class="">
+                <div ng-hide="editorEnabled">
+                    <div class="rateDiv">{{oneLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
+                </div>
+                <div class="" ng-show="editorEnabled">
+                    <input class="priceInput" ng-model="oneLiter" ng-show="editorEnabled" style="width:55px;">
+                </div>
+          </div>
+
+        </div>
+          <div class="itemList">
+            <div class="">
+                <p class="quantityText">2 liter</p>
+            </div>
+            <div class="">
+                <div ng-hide="editorEnabled">
+                    <div class="rateDiv">{{twoLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
+                </div>
+                <div class="" ng-show="editorEnabled">
+                    <input class="priceInput" ng-model="twoLiter" ng-show="editorEnabled" style="width:55px;">
+                </div>
+          </div>
+
+        </div>
+          <div class="itemList">
+            <div class="">
+                <p class="quantityText">3 liter</p>
+            </div>
+            <div class="">
+                <div ng-hide="editorEnabled">
+                    <div class="rateDiv">{{threeLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
+                </div>
+                <div class="" ng-show="editorEnabled">
+                    <input class="priceInput" ng-model="threeLiter" ng-show="editorEnabled" style="width:55px;">
+                </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+
+      <md-button class="md-raised md-primary loginBtn"   ng-hide="editorEnabled" ng-click="enableEditor()"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</md-button>
+      <md-button class="md-raised md-primary loginBtn"  ng-show="editorEnabled" ng-click="disableEditor()"><i class="fa fa-times" aria-hidden="true"></i> cancel</md-button>
+      <md-button class="md-raised md-primary loginBtn"  ng-show="editorEnabled" ng-click="save()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Update </md-button>
+    </div>
+  </div>

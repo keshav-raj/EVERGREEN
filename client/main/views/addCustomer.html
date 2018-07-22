@@ -1,0 +1,23 @@
+
+  <div ng-controller="addCustomerCtrl" ng-app="milkyWay">
+    <div class="headerDiv">
+      <h1 class="headerText">Add Customer</h1>
+    </div>
+
+    <div class="formContainer">
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Customer Name</label>
+          <input type="text" ng-model="user.custName">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Customer Number</label>
+          <input type="number" ng-model="user.custNumber">
+        </md-input-container>
+      </div>
+    </div>
+    <div class="text-center">
+      <md-button class="md-raised md-primary loginBtn" ui-sref="home()"><i class="fa fa-plus" aria-hidden="true"></i>  Add Customer</md-button>
+      
+    </div>
+  </div>

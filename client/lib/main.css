@@ -1,0 +1,118 @@
+  .navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }
+
+  .paddingNone{
+  padding: 0px;
+  }
+  .headerDiv{
+  background-color: #3498db;
+  text-align: center;
+  border-bottom: 1px solid #2980b9;
+  height: 50px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+  }
+
+  .headerText{
+  color: #ecf0f1;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 30px;
+  padding-top: 5px;
+
+  }
+  .formContainer{
+  padding: 10px;
+  }
+  .spacer{
+  height: 50px;
+  }
+  .loginBtn{
+  width: 80%;
+  padding: 5px;
+  }
+
+  .addCustBtnContainer{
+    width: 100%;
+    padding: 3px 0px;
+    margin: 4px 0px;
+  }
+  .tabsdemoDynamicHeight md-content {
+  background-color: transparent !important;
+  }
+  .tabsdemoDynamicHeight md-content md-tabs {
+  background: #f6f6f6;
+  border: 1px solid #e1e1e1;
+  }
+  .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+  background: white;
+  }
+  .tabsdemoDynamicHeight md-content h1:first-child {
+  margin-top: 0;
+  }
+
+  md-pagination-wrapper{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+  }
+  .tabHead > i {
+   font-size: 18px;
+  }
+  .listItem{
+    padding: 5px 10px;
+border: 1px solid #2c3e50;
+border-radius: 5px;
+    margin: 10px 0px;
+  }
+  .fn18{
+    font-size: 18px;
+  }
+  .clanderLabel{
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #2c3e50;
+    width: 30%;
+    display: inline-block;
+  }
+  .selectQuantity{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 0px;
+  }
+.menuBtn{
+  color: black;
+background-color: transparent;
+font-size: 20px;
+}
+.titleHeadContainer{
+  display: inline-block;
+}
+.itemList{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+.priceInput{
+  width: 50px;
+}
+.priceInput{
+width: 55px;
+margin: 2px;
+padding: 2px;
+border: 0px;
+border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.rateDiv{
+  font-size: 18px;
+font-weight: bold;
+font-style: initial;
+}
+.quantityText{
+  margin-bottom: 0;
+font-size: 18px;
+font-weight: bold;
+}
