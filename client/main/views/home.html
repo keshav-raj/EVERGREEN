@@ -1,4 +1,4 @@
-<div ng-controller="homeCtrl" ng-app="milkyWay" ng-cloak>
+<div  ng-app="milkyWay" ng-cloak>
   <md-content>
     <section layout="row" flex>
 
@@ -7,6 +7,7 @@
           <div class="addCustBtnContainer">
             <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="login()"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; Log out</md-button>
             <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; Price</md-button>
+            <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; Manage Quantity</md-button>
           </div>
       </md-sidenav>
 
@@ -37,7 +38,7 @@
         <md-tab-body>
            <div class="" style="padding:10px">
              <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for customer...">
+              <input type="text" ng-model="customer.search" class="form-control" placeholder="Search for customer...">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="button">Go!</button>
               </span>
@@ -45,45 +46,9 @@
               <div class="addCustBtnContainer">
                 <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="addCustomer()"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add customer</md-button>
               </div>
-              <div class="listItem" ui-sref="deliver()">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Keshav Raj</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Archu Shree</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Saravanan</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Gowtham krish</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Ranjith</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Keshav Raj</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Archu Shree</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Saravanan</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Gowtham krish</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
-              </div>
-              <div class="listItem">
-                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Ranjith</h5></div>
-                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
+              <div class="listItem" ng-repeat="Customer in Customers | filter:customer.search" ui-sref="deliver({customerId: Customer._id})">
+                <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : {{Customer.name}} </h5></div>
+                <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : {{Customer.phoneNo}}</h6></div>
               </div>
            </div>
          </md-tab-body>

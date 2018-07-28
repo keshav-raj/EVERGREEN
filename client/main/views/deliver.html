@@ -1,13 +1,13 @@
 
-  <div ng-controller="deliverCtrl" ng-app="milkyWay">
+  <div  ng-app="milkyWay">
     <div class="headerDiv">
       <h1 class="headerText">Deliver</h1>
     </div>
     <div class="formContainer">
       <div layout-gt-sm="row">
         <div class="listItem">
-          <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : Keshav Raj</h5></div>
-          <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : 9874563210</h6></div>
+          <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : {{customer.name}} </h5></div>
+          <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : {{customer.phoneNo}}</h6></div>
           <div class="">
             <h6 class="selectQuantity">select Quantity : </h6>
             <md-radio-group ng-model="data.group1">

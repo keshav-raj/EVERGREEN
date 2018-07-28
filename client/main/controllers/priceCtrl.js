@@ -1,10 +1,9 @@
 angular.module("milkyWay")
-    .controller('deliverCtrl', function($scope,$state,$stateParams,$meteor,$mdSidenav) {
+    .controller('priceCtrl', function($scope,$state,$stateParams,$meteor,$mdSidenav) {
 
-      $scope.halfLiter = "22";
-      $scope.oneLiter = "22";
-      $scope.twoLiter = "22";
-      $scope.threeLiter = "22";
+
+      $scope.oneLiter = 22;
+
     $scope.editorEnabled = false;
 
     $scope.enableEditor = function() {

@@ -11,4 +11,13 @@ angular.module("milkyWay")
       this.fromDate = new Date();
       this.toDate = new Date();
       this.isOpen = false;
+
+      $scope.helpers({
+        Customers: function(){
+
+        return Customers.find()
+
+      }
     });
+
+});

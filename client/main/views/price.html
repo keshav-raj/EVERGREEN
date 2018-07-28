@@ -1,5 +1,5 @@
 
-  <div ng-controller="deliverCtrl" ng-app="milkyWay">
+  <div  ng-app="milkyWay">
     <div class="headerDiv">
       <h1 class="headerText">Price</h1>
     </div>
@@ -23,60 +23,19 @@
           </div> -->
           <div class="itemList">
             <div class="">
-                <p class="quantityText">1/2 liter</p>
-            </div>
-            <div class="">
-                <div ng-hide="editorEnabled">
-                    <div class="rateDiv">{{halfLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
-                </div>
-                <div class="" ng-show="editorEnabled">
-                    <input class="priceInput" ng-model="halfLiter" ng-show="editorEnabled" style="width:55px;">
-                </div>
-          </div>
-
-        </div>
-          <div class="itemList">
-            <div class="">
-                <p class="quantityText">1 liter</p>
+                <p class="quantityText">Price/liter</p>
             </div>
             <div class="">
                 <div ng-hide="editorEnabled">
                     <div class="rateDiv">{{oneLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
                 </div>
                 <div class="" ng-show="editorEnabled">
-                    <input class="priceInput" ng-model="oneLiter" ng-show="editorEnabled" style="width:55px;">
+                    <input type="number" class="priceInput" ng-model="oneLiter" ng-show="editorEnabled" style="width:55px;">
                 </div>
           </div>
 
         </div>
-          <div class="itemList">
-            <div class="">
-                <p class="quantityText">2 liter</p>
-            </div>
-            <div class="">
-                <div ng-hide="editorEnabled">
-                    <div class="rateDiv">{{twoLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
-                </div>
-                <div class="" ng-show="editorEnabled">
-                    <input class="priceInput" ng-model="twoLiter" ng-show="editorEnabled" style="width:55px;">
-                </div>
-          </div>
 
-        </div>
-          <div class="itemList">
-            <div class="">
-                <p class="quantityText">3 liter</p>
-            </div>
-            <div class="">
-                <div ng-hide="editorEnabled">
-                    <div class="rateDiv">{{threeLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
-                </div>
-                <div class="" ng-show="editorEnabled">
-                    <input class="priceInput" ng-model="threeLiter" ng-show="editorEnabled" style="width:55px;">
-                </div>
-          </div>
-
-        </div>
       </div>
     </div>
 

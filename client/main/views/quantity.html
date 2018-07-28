@@ -1,0 +1,52 @@
+
+  <div ng-app="milkyWay">
+    <div class="headerDiv">
+      <h1 class="headerText">Quantities</h1>
+    </div>
+    <br>
+    <br>
+      <div layout-gt-sm="row">
+        <div class=" ">
+      <div class="">
+        <md-input-container class="md-block" flex-gt-sm style="margin:0px">
+          <label>Enter Quantity</label>
+          <input type="number" ng-model="data.quantity">
+        </md-input-container>
+      </div>
+
+          <md-button class="md-raised md-primary "   style="width:95%"  ng-click="addQuantities()"><i class="fa fa-plus" aria-hidden="true"></i> Add Quantity</md-button>
+          <md-button class="md-raised md-primary "   style="width:95%"  ui-sref="home()"><i class="fa fa-home" aria-hidden="true"></i> Home</md-button>
+
+        </div>
+        <div class="listItem">
+          <!-- <div class="itemList">
+            <div class="">
+                <p class="" style="margin-bottom:0px">1/2 liter</p>
+            </div>
+            <div class="">
+                20rs <span><button class="menuBtn btn"><i class="fa fa-pencil" aria-hidden="true"></i></button></span>
+            </div>
+          </div>
+          <div class="itemList">
+            <div class="">
+                <p class="" style="margin-bottom:0px">1 liter</p>
+            </div>
+            <div class="">
+                20rs <span><button class="menuBtn btn"><i class="fa fa-pencil" aria-hidden="true"></i></button></span>
+            </div>
+          </div> -->
+          <div class="itemList" ng-repeat="Quantity in Quantities">
+            <div class="">
+                <p class="quantityText">{{Quantity.value}} liter</p>
+            </div>
+            <div class="">
+              <button class="menuBtn btn" ng-click="deleteQuantities(Quantity)"><i class="fa fa-trash-o" style="color:#e74c3c" aria-hidden="true"></i> </button>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
