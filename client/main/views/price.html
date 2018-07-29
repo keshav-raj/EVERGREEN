@@ -27,7 +27,7 @@
             </div>
             <div class="">
                 <div ng-hide="editorEnabled">
-                    <div class="rateDiv">{{oneLiter}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
+                    <div class="rateDiv" ng-repeat="price in prices">{{price.value}}  <i class="fa fa-inr" aria-hidden="true"></i> </div>
                 </div>
                 <div class="" ng-show="editorEnabled">
                     <input type="number" class="priceInput" ng-model="oneLiter" ng-show="editorEnabled" style="width:55px;">
@@ -43,6 +43,6 @@
 
       <md-button class="md-raised md-primary loginBtn"   ng-hide="editorEnabled" ng-click="enableEditor()"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</md-button>
       <md-button class="md-raised md-primary loginBtn"  ng-show="editorEnabled" ng-click="disableEditor()"><i class="fa fa-times" aria-hidden="true"></i> cancel</md-button>
-      <md-button class="md-raised md-primary loginBtn"  ng-show="editorEnabled" ng-click="save()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Update </md-button>
+      <md-button class="md-raised md-primary loginBtn"  ng-show="editorEnabled" ng-click="addPrice()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Update </md-button>
     </div>
   </div>

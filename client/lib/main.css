@@ -116,3 +116,14 @@ font-style: initial;
 font-size: 18px;
 font-weight: bold;
 }
+.radioModal{
+  padding: 5px;
+    margin: 15px;
+  
+}
+.radioContainer{
+  width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}

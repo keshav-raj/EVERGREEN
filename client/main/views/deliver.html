@@ -10,20 +10,21 @@
           <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : {{customer.phoneNo}}</h6></div>
           <div class="">
             <h6 class="selectQuantity">select Quantity : </h6>
+
             <md-radio-group ng-model="data.group1">
-
-              <md-radio-button value=".5">1/2 liter</md-radio-button>
-              <md-radio-button value="1"> 1 liter </md-radio-button>
-              <md-radio-button value="2">2 liter</md-radio-button>
-              <md-radio-button value="3">3 liter</md-radio-button>
-
+            <div class="" ng-repeat="Quantity in Quantities">
+              <md-radio-button  ng-value='Quantity.value'>{{Quantity.value}} liter</md-radio-button>
+            </div>
             </md-radio-group>
 
           </div>
         </div>
       </div>
     </div>
+    <div class="">
+        <md-button class="md-primary" ng-click="showDialog($event)">Launch Dialog</md-button>
+    </div>
     <div class="text-center">
-      <md-button class="md-raised md-primary loginBtn" ui-sref="home()"> Deliver</md-button>
+      <md-button class="md-raised md-primary loginBtn" ng-click="deliverItem(data)">Deliver</md-button>
     </div>
   </div>

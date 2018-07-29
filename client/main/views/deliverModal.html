@@ -1,0 +1,48 @@
+<div role="dialog"  layout="column" layout-align="center center">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Delivery</h2>
+    </div>
+  </md-toolbar>
+
+  <div class="demo-dialog-content">
+    <div layout="row" >
+      <md-radio-group ng-model="payType.group1">
+        <div class="radioContainer">
+          <div class="radioModal" >
+            <md-radio-button  value="cash">Cash</md-radio-button>
+          </div>
+          <div class="radioModal" >
+            <md-radio-button  value="credit">Credit</md-radio-button>
+          </div>
+        </div>
+      </md-radio-group>
+
+    </div>
+    <div layout="row" >
+      <md-radio-group ng-model="Time.group1">
+        <div class="radioContainer">
+          <div class="radioModal" >
+            <md-radio-button  value="morning">Morning</md-radio-button>
+          </div>
+          <div class="radioModal" >
+            <md-radio-button  value="evening">Evening</md-radio-button>
+          </div>
+        </div>
+      </md-radio-group>
+
+    </div>
+
+
+
+  </div>
+
+  <div layout="row" class="demo-dialog-button">
+    <md-button md-autofocus flex class="md-primary">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i> Deliver
+    </md-button>
+    <md-button  flex class="md-primary" ng-click="ctrl.closeDialog()">
+      <i class="fa fa-times-circle" aria-hidden="true"></i> Cancel
+    </md-button>
+  </div>
+</div>
