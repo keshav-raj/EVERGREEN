@@ -1,5 +1,5 @@
 angular.module("milkyWay")
-    .controller('deliverCtrl', function($scope,$state,$stateParams,$meteor,$mdSidenav,$mdDialog) {
+    .controller('deliverCtrl', function($scope,$state,$stateParams,$meteor,$mdSidenav,$mdDialog, $window) {
 
    $scope.helpers({
      customer: function(){
@@ -13,40 +13,21 @@ angular.module("milkyWay")
    }
  })
 
-   $scope.deliverItem= function(deliverAmount){
-     console.log(deliverAmount);
-    var deliverQuantity = deliverAmount.group1;
-     let custData = Customers.findOne({_id:$stateParams.customerId});
-     let data ={
-       customerName: custData.name,
-       customerPhone:custData.phoneNo,
-         deliverQuantity:deliverQuantity,
-     }
 
-     Meteor.call('deliverItem', data, function(err){
-       if(!err){
-         console.log("successfull");
-        $state.go('home');
-
-
-       }else{
-         console.log("Failed ")
-       }
-     });
-   }
 
    var alert;
   $scope.showDialog = showDialog;
-  $scope.items = [1,2,3];
 
-  function showDialog($event) {
+  function showDialog($event, delivery) {
+
+    $scope.delivery = delivery;
     var parentEl = angular.element(document.querySelector('md-content'));
     alert = $mdDialog.alert({
       parent: parentEl,
       targetEvent: $event,
       templateUrl:'client/main/views/deliverModal.html',
         locals: {
-          items: $scope.items,
+          items: $scope.delivery,
           closeDialog: $scope.closeDialog
         },
         bindToController: true,
@@ -64,6 +45,13 @@ angular.module("milkyWay")
     $mdDialog.hide();
   };
 
+  $scope.deliver = function($event, delivery){
+    if(!delivery){
+      $window.alert("Please select quantity");
+    }else {
+      showDialog($event, delivery);
+    }
+  }
 
 
     });
