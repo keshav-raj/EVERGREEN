@@ -119,11 +119,27 @@ font-weight: bold;
 .radioModal{
   padding: 5px;
     margin: 15px;
-  
+
 }
 .radioContainer{
   width: 100%;
 display: flex;
 justify-content: space-around;
 align-items: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }

@@ -8,6 +8,7 @@
             <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="login()"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; Log out</md-button>
             <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; Price</md-button>
             <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; Manage Quantity</md-button>
+            <md-button class="md-raised md-primary addCustBtnContainer" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Home</md-button>
           </div>
       </md-sidenav>
 
@@ -67,14 +68,15 @@
           </md-input-container>
           <div >
             <div class="clanderLabel">From</div>
-            <md-datepicker ng-model="ctrl.fromDate" md-placeholder="Enter date"></md-datepicker>
+            <md-datepicker md-min-date="minDate" md-max-date="maxDate" ng-model="fromDate" md-placeholder="Enter date"></md-datepicker>
           </div>
           <div >
             <div class="clanderLabel">To</div>
-            <md-datepicker ng-model="ctrl.toDate" md-placeholder="Enter date"></md-datepicker>
+            <md-datepicker md-min-date="minDate" md-max-date="maxDate" ng-model="toDate" md-placeholder="Enter date"></md-datepicker>
           </div>
           <div class="addCustBtnContainer">
-            <md-button class="md-raised md-primary addCustBtnContainer"><i class="fa fa-pie-chart" aria-hidden="true"></i> &nbsp; Generate Report</md-button>
+            <md-button class="md-raised md-primary addCustBtnContainer" ng-click="generateReport(fromDate, toDate)" >
+              <i class="fa fa-pie-chart" aria-hidden="true"></i> &nbsp; Generate Report</md-button>
           </div>
         </div>
          </md-tab-body>
