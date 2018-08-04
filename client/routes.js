@@ -38,6 +38,21 @@ angular.module('milkyWay').config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "client/main/views/quantity.html",
       controller: "quantityCtrl"
     })
+    .state('report', {
+      url: "/deliver",
+      templateUrl: "client/main/views/report.html",
+      controller: "reportCtrl"
+    })
+    .state('manageCust', {
+      url: "/manageCust",
+      templateUrl: "client/main/views/manageCust.html",
+      controller: "manageCustCtrl"
+    })
+    .state('custDeteails', {
+      url: "/custDeteails/:customerId",
+      templateUrl: "client/main/views/custDeteails.html",
+      controller: "custDeteailsCtrl"
+    })
 
 
 });

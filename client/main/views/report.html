@@ -1,0 +1,20 @@
+<h2>Report</h2>
+<h3>{{Dates.fromDate | date}} To {{Dates.toDate | date}}</h3>
+
+<table>
+  <tr>
+    <th>Customer Name</th>
+    <th>Customer Phone No</th>
+    <th>Delivered Quantity</th>
+    <th>Paymend Mode</th>
+    <th>Price ₹ </th>
+  </tr>
+  <tr ng-repeat="Delivery in Deliveries">
+    <td>{{Delivery.customerName}}</td>
+    <td>{{Delivery.customerPhone}}</td>
+    <td>{{Delivery.deliverQuantity}}</td>
+    <td>{{Delivery.deliveryTime}}</td>
+    <td>{{Delivery.deliveryPrice}}</td>
+  </tr>
+
+</table>

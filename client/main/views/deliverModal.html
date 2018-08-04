@@ -5,9 +5,13 @@
     </div>
   </md-toolbar>
 
+  <div class="">
+    <h5 style="font-weight:bold" >Selected Quantity is {{ delivery.quantity }} Ltr </h5>
+  </div>
+
   <div class="demo-dialog-content">
     <div layout="row" >
-      <md-radio-group ng-model="payType.group1">
+      <md-radio-group ng-model="data.paymentType">
         <div class="radioContainer">
           <div class="radioModal" >
             <md-radio-button  value="cash">Cash</md-radio-button>
@@ -20,7 +24,7 @@
 
     </div>
     <div layout="row" >
-      <md-radio-group ng-model="Time.group1">
+      <md-radio-group ng-model="data.Time">
         <div class="radioContainer">
           <div class="radioModal" >
             <md-radio-button  value="morning">Morning</md-radio-button>
@@ -38,7 +42,7 @@
   </div>
 
   <div layout="row" class="demo-dialog-button">
-    <md-button md-autofocus flex class="md-primary">
+    <md-button md-autofocus flex class="md-primary" ng-click="deliverItem(data)">
       <i class="fa fa-shopping-cart" aria-hidden="true"></i> Deliver
     </md-button>
     <md-button  flex class="md-primary" ng-click="ctrl.closeDialog()">

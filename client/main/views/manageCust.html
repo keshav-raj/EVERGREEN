@@ -1,0 +1,36 @@
+<section layout="row" flex>
+
+  <md-sidenav class="md-sidenav-left" md-component-id="closeEventsDisabled"
+              md-whiteframe="4" md-disable-close-events>
+      <div class="addCustBtnContainer">
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="login()"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; Log out</md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; Price</md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Home</md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; Manage Quantity</md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="manageCust()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp; Manage Customer</md-button>
+      </div>
+  </md-sidenav>
+
+  <md-content flex layout-padding>
+    <div class="" style="
+    padding-bottom: 0px;
+    padding-top: 0px;">
+      <button class="btn menuBtn" ng-click="toggleSidenav()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="titleHeadContainer">
+        <h5 class="titleHead">EverGreen</h5>
+      </div>
+    </div>
+  </md-content>
+
+
+</section>
+
+<div class="listItem "  ng-repeat="Customer in Customers | filter:customer.search" ui-sref="custDeteails({customerId: Customer._id})">
+  <div class="">
+    <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : {{Customer.name}} </h5></div>
+    <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : {{Customer.phoneNo}}</h6></div>
+  </div>
+
+</div>
