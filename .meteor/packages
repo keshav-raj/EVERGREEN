@@ -23,11 +23,8 @@ angular:angular-material
 twbs:bootstrap
 fortawesome:fontawesome
 nicolaslopezj:excel-export
-<<<<<<< HEAD
 angularjs:angular-messages
-=======
 planettraining:angular-translate
 planettraining:angular-translate-storage-cookie
 planettraining:angular-translate-loader-static-files
 angular:angular-cookies
->>>>>>> 30d5314262a039371f9d9e6b68a3e20270b75bec
