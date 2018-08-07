@@ -1,6 +1,6 @@
 
   <div  ng-app="milkyWay">
-    <div class="headerDiv">
+    <div class="headerDiv  ">
       <h1 class="headerText" translate="price"></h1>
     </div>
       <div layout-gt-sm="row">
@@ -26,8 +26,11 @@
 
     <div class="text-center">
 
-      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn"   ng-hide="editorEnabled" ng-click="enableEditor()"><i class="fa fa-pencil" aria-hidden="true"></i> <span translate="Edit"></span></md-button>
-      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn"  ng-show="editorEnabled" ng-click="disableEditor()"><i class="fa fa-times" aria-hidden="true"></i> <span translate="Cancel"></span></md-button>
-      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn"  ng-show="editorEnabled" ng-click="addPrice()"><i class="fa fa-floppy-o" aria-hidden="true"></i> <span translate="Update"></span> </md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  "   ng-hide="editorEnabled" ng-click="enableEditor()"><i class="fa fa-pencil" aria-hidden="true"></i> <span translate="Edit"></span></md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  "  ng-show="editorEnabled" ng-click="disableEditor()"><i class="fa fa-times" aria-hidden="true"></i> <span translate="Cancel"></span></md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  "  ng-show="editorEnabled" ng-click="addPrice()"><i class="fa fa-floppy-o" aria-hidden="true"></i> <span translate="Update"></span> </md-button>
     </div>
+    <md-button class="md-fab fabBtnPosition  " aria-label="EverGreen" ui-sref="home()">
+           <div class=""><i class="fa fa-home" aria-hidden="true"></i></div>
+       </md-button>
   </div>

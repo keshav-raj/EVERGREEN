@@ -7,11 +7,12 @@
   padding: 0px;
   }
   .headerDiv{
-  background-color: #3498db;
-  text-align: center;
-  border-bottom: 1px solid #2980b9;
-  height: 50px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+    background-color: #0D47A1;
+       text-align: center;
+       height: 60px;
+       box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+       padding: 10px 0px;
+
   }
 
   .headerText{
@@ -43,9 +44,13 @@
   }
   .menuBtnStyle{
     width: 100%;
-    padding: 5px 20px;
-    margin: 4px 0px;
-    text-align: left;
+        padding: 5px 20px;
+        margin: 4px 0px;
+        text-align: left;
+        border: 0px;
+        background-color: inherit !important;
+        outline: none;
+
   }
   .tabsdemoDynamicHeight md-content {
   background-color: transparent !important;
@@ -204,4 +209,31 @@ tr:nth-child(even) {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+.fabBtnPosition{
+  position: fixed;
+bottom: 35px;
+right: 25px;
+background-color: #0D47A1 !important;
+    font-size: 25px;
+}
+.colorTheme{
+  background-color: #3F51B5 !important;
+}
+.menuBtnWrapper{
+  padding: 10px;
+border-bottom: 1px solid #ecf0f1;
+color:#ecf0f1;
+font-size: 20px;
+}
+.menuHeadBrand{
+  text-align: center;
+color:#ecf0f1;
+font-weight: bold;
+font-style: italic;
+font-family: -webkit-pictograph;
+}
+.colorThemeText{
+      color: #27ae60 !important;
 }

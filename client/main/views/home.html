@@ -1,16 +1,30 @@
 <div  ng-app="milkyWay" ng-cloak>
-  <md-content style="height:100%">
+  <md-content >
     <section layout="row" flex>
 
-      <md-sidenav class="md-sidenav-left" md-component-id="closeEventsDisabled"
+      <md-sidenav class="md-sidenav-left colorTheme" md-component-id="closeEventsDisabled"
                   md-whiteframe="4" md-disable-close-events>
           <div class="addCustBtnContainer">
-            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="login()" ><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; <span translate="log_out"></span></md-button>
-            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; <span translate="price"></span></md-button>
-            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; <span translate="Home"></span></md-button>
-            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; <span translate="Manage_Quantity"></span></md-button>
-            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="manageCust()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp; <span translate="Manage_Customer"></span></md-button>
-            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ng-click="translateOptions($event)"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; <span translate="Translate"></span></md-button>
+            <h1 class="menuHeadBrand" translate="EverGreen"></h1>
+            <div class="menuBtnWrapper">
+              <button class="menuBtnStyle" ui-sref="login()"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; <span translate="log_out"></span></button>
+            </div>
+            <div class="menuBtnWrapper">
+              <button class="menuBtnStyle" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; <span translate="price"></span></button>
+            </div>
+            <div class="menuBtnWrapper">
+              <button class="menuBtnStyle" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; <span translate="Home"></span></button>
+            </div>
+            <div class="menuBtnWrapper">
+              <button class="menuBtnStyle" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; <span translate="Manage_Quantity"></span></button>
+            </div>
+            <div class="menuBtnWrapper">
+              <button class="menuBtnStyle" ui-sref="manageCust()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp; <span translate="Manage_Customer"></span></button>
+            </div>
+            <div class="menuBtnWrapper">
+              <button class="menuBtnStyle" ng-click="translateOptions($event)"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; <span translate="Translate"></span></button>
+            </div>
+
           </div>
       </md-sidenav>
 
@@ -30,7 +44,7 @@
 
     </section>
 
-
+<div class="" style=" min-height: 964px;">
     <md-tabs md-dynamic-height md-border-bottom>
       <md-tab >
         <md-tab-label>
@@ -45,7 +59,7 @@
                 <input type="text" ng-model="customer.search">
               </md-input-container>
               <div class="addCustBtnContainer">
-                <md-button aria-label="EverGreen" class="md-raised md-primary addCustBtnContainer" ui-sref="addCustomer()" ><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; <span translate="add_customer"></span></md-button>
+                <md-button aria-label="EverGreen" class="md-raised md-primary addCustBtnContainer " ui-sref="addCustomer()" ><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; <span translate="add_customer"></span></md-button>
               </div>
               <div class="listItem "  ng-repeat="Customer in Customers | filter:customer.search" ui-sref="deliver({customerId: Customer._id})">
                 <div class="">
@@ -85,5 +99,6 @@
          </md-tab-body>
       </md-tab>
     </md-tabs>
+</div>
   </md-content>
 </div>

@@ -1,6 +1,6 @@
 
   <div  ng-app="milkyWay">
-    <div class="headerDiv">
+    <div class="headerDiv  ">
       <h1 class="headerText" translate="Deliver">Deliver</h1>
     </div>
     <div class="formContainer">
@@ -25,6 +25,9 @@
         <md-button class="md-primary" ng-click="showDialog($event)">Launch Dialog</md-button>
     </div> -->
     <div class="text-center">
-      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn" ng-click="deliver($event, delivery)" translate="Deliver"></md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  " ng-click="deliver($event, delivery)" translate="Deliver"></md-button>
     </div>
+    <md-button class="md-fab fabBtnPosition  " aria-label="EverGreen" ui-sref="home()">
+           <div class=""><i class="fa fa-home" aria-hidden="true"></i></div>
+       </md-button>
   </div>
