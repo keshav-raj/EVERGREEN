@@ -5,12 +5,12 @@
       <md-sidenav class="md-sidenav-left" md-component-id="closeEventsDisabled"
                   md-whiteframe="4" md-disable-close-events>
           <div class="addCustBtnContainer">
-            <md-button class="md-raised md-primary menuBtnStyle" ui-sref="login()"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; <span translate="log_out"></span></md-button>
-            <md-button class="md-raised md-primary menuBtnStyle" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; <span translate="price"></span></md-button>
-            <md-button class="md-raised md-primary menuBtnStyle" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; <span translate="Home"></span></md-button>
-            <md-button class="md-raised md-primary menuBtnStyle" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; <span translate="Manage_Quantity"></span></md-button>
-            <md-button class="md-raised md-primary menuBtnStyle" ui-sref="manageCust()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp; <span translate="Manage_Customer"></span></md-button>
-            <md-button class="md-raised md-primary menuBtnStyle" ng-click="translateOptions($event)"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; <span translate="Translate"></span></md-button>
+            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="login()" ><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; <span translate="log_out"></span></md-button>
+            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; <span translate="price"></span></md-button>
+            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; <span translate="Home"></span></md-button>
+            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; <span translate="Manage_Quantity"></span></md-button>
+            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ui-sref="manageCust()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp; <span translate="Manage_Customer"></span></md-button>
+            <md-button aria-label="EverGreen" class="md-raised md-primary menuBtnStyle" ng-click="translateOptions($event)"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; <span translate="Translate"></span></md-button>
           </div>
       </md-sidenav>
 
@@ -45,7 +45,7 @@
                 <input type="text" ng-model="customer.search">
               </md-input-container>
               <div class="addCustBtnContainer">
-                <md-button class="md-raised md-primary addCustBtnContainer" ui-sref="addCustomer()" ><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; <span translate="add_customer"></span></md-button>
+                <md-button aria-label="EverGreen" class="md-raised md-primary addCustBtnContainer" ui-sref="addCustomer()" ><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; <span translate="add_customer"></span></md-button>
               </div>
               <div class="listItem "  ng-repeat="Customer in Customers | filter:customer.search" ui-sref="deliver({customerId: Customer._id})">
                 <div class="">
@@ -78,7 +78,7 @@
             <md-datepicker md-min-date="minDate" md-max-date="maxDate" ng-model="toDate" md-placeholder="Enter date"></md-datepicker>
           </div>
           <div class="addCustBtnContainer">
-            <md-button class="md-raised md-primary addCustBtnContainer" ng-click="generateReport(fromDate, toDate)" >
+            <md-button aria-label="EverGreen" class="md-raised md-primary addCustBtnContainer" ng-click="generateReport(fromDate, toDate)" >
               <i class="fa fa-pie-chart" aria-hidden="true"></i> &nbsp; <span translate="Generate_Report"></span></md-button>
           </div>
         </div>

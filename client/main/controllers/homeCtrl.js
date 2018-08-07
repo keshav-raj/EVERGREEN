@@ -1,6 +1,5 @@
 angular.module("milkyWay")
     .controller('homeCtrl', function($scope,$state,$stateParams,$meteor,$mdSidenav,$mdDialog,$translate) {
-      console.log($translate);
       $scope.trans = function(key) {
      $translate.use(key);
    };
