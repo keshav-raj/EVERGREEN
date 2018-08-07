@@ -8,5 +8,6 @@ angular.module('milkyWay', [
   uiRouter,
   'ngAnimate',
   'ngMaterial',
-  'ngMessages'
+  'pascalprecht.translate',
+   'ngCookies'
 ]);

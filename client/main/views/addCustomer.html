@@ -1,33 +1,28 @@
 
   <div ng-app="milkyWay">
-    <div class="headerDiv">
-      <h1 class="headerText">Add Customer</h1>
+    <div class="headerDiv  ">
+      <h1 class="headerText" translate="add_customer"></h1>
     </div>
 
     <form name="customerForm">
     <div class="formContainer">
       <div layout-gt-sm="row">
-        <md-input-container class="md-block" flex-gt-sm>
-          <label>Customer Name</label>
-          <input type="text" name="customerName" ng-model="user.custName" required>
-          <div ng-messages="customerForm.customerName.$error" role="alert">
-            <div ng-message="required">Customer Name is required!</div>
-          </div>
+        <md-input-container  class="md-block" flex-gt-sm>
+          <label translate="Customer_name">Customer Name</label>
+          <input type="text" ng-model="user.custName">
         </md-input-container>
-        <md-input-container class="md-block" flex-gt-sm>
-          <label>Customer Number</label>
-          <input type="number" name="customerNumber" ng-model="user.custNumber" required maxlength="10" minlength="10">
-          <div ng-messages="customerForm.customerNumber.$error" role="alert">
-            <div ng-message="required">Customer Number is required!</div>
-            <div ng-message="minlength">Invalid Phone number</div>
-            <div ng-message="maxlength">Invalid Phone number</div>
-          </div>
+        <md-input-container  class="md-block" flex-gt-sm>
+          <label translate="Customer_number">Customer Number</label>
+          <input type="number" ng-model="user.custNumber">
         </md-input-container>
       </div>
     </div>
   </form>
     <div class="text-center">
-      <md-button class="md-raised md-primary loginBtn" ng-click="addCustomer()"><i class="fa fa-plus" aria-hidden="true"></i>  Add Customer</md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  " ng-click="addCustomer()"><i class="fa fa-plus" aria-hidden="true"></i> <span translate="add_customer"></span></md-button>
 
     </div>
+    <md-button class="md-fab fabBtnPosition  " aria-label="EverGreen" ui-sref="home()">
+           <div class=""><i class="fa fa-home" aria-hidden="true"></i></div>
+       </md-button>
   </div>

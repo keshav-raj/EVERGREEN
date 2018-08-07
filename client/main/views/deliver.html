@@ -1,7 +1,7 @@
 
   <div  ng-app="milkyWay">
-    <div class="headerDiv">
-      <h1 class="headerText">Deliver</h1>
+    <div class="headerDiv  ">
+      <h1 class="headerText" translate="Deliver">Deliver</h1>
     </div>
     <div class="formContainer">
       <div layout-gt-sm="row">
@@ -9,11 +9,11 @@
           <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : {{customer.name}} </h5></div>
           <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : {{customer.phoneNo}}</h6></div>
           <div class="">
-            <h6 class="selectQuantity">select Quantity : </h6>
+            <h6 class="selectQuantity"><span translate="Select_Quantity"></span> : </h6>
 
             <md-radio-group ng-model="delivery.quantity">
             <div class="" ng-repeat="Quantity in Quantities">
-              <md-radio-button  ng-value='Quantity.value'>{{Quantity.value}} liter</md-radio-button>
+              <md-radio-button  ng-value='Quantity.value'>{{Quantity.value}} <span translate="Liter"></span></md-radio-button>
             </div>
             </md-radio-group>
 
@@ -25,6 +25,9 @@
         <md-button class="md-primary" ng-click="showDialog($event)">Launch Dialog</md-button>
     </div> -->
     <div class="text-center">
-      <md-button class="md-raised md-primary loginBtn" ng-click="deliver($event, delivery)">Deliver</md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  " ng-click="deliver($event, delivery)" translate="Deliver"></md-button>
     </div>
+    <md-button class="md-fab fabBtnPosition  " aria-label="EverGreen" ui-sref="home()">
+           <div class=""><i class="fa fa-home" aria-hidden="true"></i></div>
+       </md-button>
   </div>

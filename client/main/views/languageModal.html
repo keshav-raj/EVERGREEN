@@ -1,0 +1,33 @@
+<div role="dialog"  layout="column" layout-align="center center">
+  <md-toolbar>
+    <div class="md-toolbar-tools colorTheme">
+      <h2 translate="">Translate</h2>
+    </div>
+  </md-toolbar>
+
+
+
+  <div class="demo-dialog-content">
+
+    <div layout="row" >
+
+      <form action="#" style="padding:10px;margin:10px">
+       <p>
+         <input type="radio" id="test1" name="radio-group" ng-click="trans('en_US')">
+         <label for="test1" translate="English"></label>
+       </p>
+       <p>
+         <input type="radio" id="test2" name="radio-group" ng-click="trans('tn_IN')" >
+         <label for="test2" translate="Tamil"></label>
+       </p>
+     </form>
+
+    </div>
+
+  </div>
+  <div layout="row" class="demo-dialog-button">
+    <md-button aria-label="EverGreen"  flex class="md-primary" ng-click="ctrl.closeDialog()">
+      <i class="fa fa-home" aria-hidden="true"></i> <span translate="Home"></span>
+    </md-button>
+  </div>
+</div>
