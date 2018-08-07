@@ -7,5 +7,6 @@ angular.module('milkyWay', [
   angularMeteor,
   uiRouter,
   'ngAnimate',
-  'ngMaterial'
+  'ngMaterial',
+  'ngMessages'
 ]);
