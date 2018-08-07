@@ -1,7 +1,7 @@
 
   <div  ng-app="milkyWay">
     <div class="headerDiv">
-      <h1 class="headerText">Customer</h1>
+      <h1 class="headerText" translate="Customer"></h1>
     </div>
       <div layout-gt-sm="row">
         <div class="listItem" ng-hide="editorEnabled">
@@ -13,11 +13,11 @@
           <div class="formContainer">
             <div layout-gt-sm="row">
               <md-input-container class="md-block" flex-gt-sm>
-                <label>Customer Name</label>
+                <label translate="Customer_name"></label>
                 <input type="text" ng-model="tempName">
               </md-input-container>
               <md-input-container class="md-block" flex-gt-sm>
-                <label>Customer Number</label>
+                <label translate="Customer_name"></label>
                 <input type="number" ng-model="tempPhoneNo">
               </md-input-container>
             </div>
@@ -27,9 +27,9 @@
 
     <div class="text-center">
 
-      <md-button class="md-raised md-primary toggleBtnStyle" style="width: 80%"   ng-hide="editorEnabled" ng-click="enableEditor()"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</md-button>
-      <md-button class="md-raised md-primary toggleBtnStyle"  ng-show="editorEnabled" ng-click="disableEditor()"><i class="fa fa-times" aria-hidden="true"></i> cancel</md-button>
-      <md-button class="md-raised md-primary toggleBtnStyle"  ng-show="editorEnabled" ng-click="updateCustomer()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Update </md-button>
-      <md-button class="md-raised md-primary toggleBtnStyle "  ng-show="editorEnabled" ng-click="deleteCustomer()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Delete </md-button>
+      <md-button class="md-raised md-primary toggleBtnStyle" style="width: 80%"   ng-hide="editorEnabled" ng-click="enableEditor()"><i class="fa fa-pencil" aria-hidden="true"></i> <span translate="Edit"></span></md-button>
+      <md-button class="md-raised md-primary toggleBtnStyle"  ng-show="editorEnabled" ng-click="disableEditor()"><i class="fa fa-times" aria-hidden="true"></i> <span translate="Cancel"></span></md-button>
+      <md-button class="md-raised md-primary toggleBtnStyle"  ng-show="editorEnabled" ng-click="updateCustomer()"><i class="fa fa-floppy-o" aria-hidden="true"></i> <span translate="Update"></span></md-button>
+      <md-button class="md-raised md-primary toggleBtnStyle "  ng-show="editorEnabled" ng-click="deleteCustomer()"><i class="fa fa-floppy-o" aria-hidden="true"></i><span translate="Delete"></span></md-button>
     </div>
   </div>

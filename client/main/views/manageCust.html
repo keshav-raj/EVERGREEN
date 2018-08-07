@@ -3,11 +3,12 @@
   <md-sidenav class="md-sidenav-left" md-component-id="closeEventsDisabled"
               md-whiteframe="4" md-disable-close-events>
       <div class="addCustBtnContainer">
-        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="login()"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; Log out</md-button>
-        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; Price</md-button>
-        <md-button class="md-raised md-primary menuBtnStyle" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Home</md-button>
-        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; Manage Quantity</md-button>
-        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="manageCust()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp; Manage Customer</md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="login()"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; <span translate="log_out"></span></md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="price()"><i class="fa fa-money" aria-hidden="true"></i> &nbsp; <span translate="price"></span></md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ng-click="toggleSidenav()"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; <span translate="Home"></span></md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="quantity()"><i class="fa fa-tasks" aria-hidden="true"></i> &nbsp; <span translate="Manage_Quantity"></span></md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ui-sref="manageCust()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp; <span translate="Manage_Customer"></span></md-button>
+        <md-button class="md-raised md-primary menuBtnStyle" ng-click="translateOptions($event)"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; <span translate="Translate"></span></md-button>
       </div>
   </md-sidenav>
 
@@ -19,7 +20,7 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button>
       <div class="titleHeadContainer">
-        <h5 class="titleHead">EverGreen</h5>
+        <h5 class="titleHead" translate="EverGreen"></h5>
       </div>
     </div>
   </md-content>

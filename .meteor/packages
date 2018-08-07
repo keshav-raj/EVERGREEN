@@ -23,3 +23,7 @@ angular:angular-material
 twbs:bootstrap
 fortawesome:fontawesome
 nicolaslopezj:excel-export
+planettraining:angular-translate
+planettraining:angular-translate-storage-cookie
+planettraining:angular-translate-loader-static-files
+angular:angular-cookies

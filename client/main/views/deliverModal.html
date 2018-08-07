@@ -1,7 +1,7 @@
 <div role="dialog"  layout="column" layout-align="center center">
   <md-toolbar>
     <div class="md-toolbar-tools">
-      <h2>Delivery</h2>
+      <h2 translate="Deliver"></h2>
     </div>
   </md-toolbar>
 
@@ -14,10 +14,10 @@
       <md-radio-group ng-model="data.paymentType">
         <div class="radioContainer">
           <div class="radioModal" >
-            <md-radio-button  value="cash">Cash</md-radio-button>
+            <md-radio-button  value="cash"><span translate="Cash"></span></md-radio-button>
           </div>
           <div class="radioModal" >
-            <md-radio-button  value="credit">Credit</md-radio-button>
+            <md-radio-button  value="credit"><span translate="Credit"></span></md-radio-button>
           </div>
         </div>
       </md-radio-group>
@@ -27,10 +27,10 @@
       <md-radio-group ng-model="data.Time">
         <div class="radioContainer">
           <div class="radioModal" >
-            <md-radio-button  value="morning">Morning</md-radio-button>
+            <md-radio-button  value="morning"><span translate="Morning"></span></md-radio-button>
           </div>
           <div class="radioModal" >
-            <md-radio-button  value="evening">Evening</md-radio-button>
+            <md-radio-button  value="evening"><span translate="Evening"></span></md-radio-button>
           </div>
         </div>
       </md-radio-group>
@@ -43,10 +43,10 @@
 
   <div layout="row" class="demo-dialog-button">
     <md-button md-autofocus flex class="md-primary" ng-click="deliverItem(data)">
-      <i class="fa fa-shopping-cart" aria-hidden="true"></i> Deliver
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span translate="Deliver"></span>
     </md-button>
     <md-button  flex class="md-primary" ng-click="ctrl.closeDialog()">
-      <i class="fa fa-times-circle" aria-hidden="true"></i> Cancel
+      <i class="fa fa-times-circle" aria-hidden="true"></i> <span translate="Cancel"></span>
     </md-button>
   </div>
 </div>

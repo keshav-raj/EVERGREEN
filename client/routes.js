@@ -1,4 +1,22 @@
-angular.module('milkyWay').config(function($stateProvider, $urlRouterProvider) {
+angular.module('milkyWay').config(function($stateProvider, $urlRouterProvider,$translateProvider) {
+  console.log($translateProvider);
+
+  $translateProvider.registerAvailableLanguageKeys(['tn_IN','en_US'], {
+    'en_US': 'en_US',
+    'en_UK': 'en_US',
+    'tn_IN': 'tn_IN',
+    'tn': 'tn_IN'
+    });
+
+    $translateProvider.useStaticFilesLoader({
+      prefix: 'lang_',
+      suffix: '.json'
+    });
+
+
+    $translateProvider.preferredLanguage("en_US");
+    $translateProvider.useCookieStorage();
+    $translateProvider.fallbackLanguage("en_US");
 
   $urlRouterProvider.otherwise("/login");
 

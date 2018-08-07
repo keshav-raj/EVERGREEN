@@ -7,5 +7,7 @@ angular.module('milkyWay', [
   angularMeteor,
   uiRouter,
   'ngAnimate',
-  'ngMaterial'
+  'ngMaterial',
+  'pascalprecht.translate',
+   'ngCookies'
 ]);

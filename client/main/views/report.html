@@ -1,13 +1,13 @@
-<h2>Report</h2>
+<h2  translate="Report"></h2>
 <h3>{{Dates.fromDate | date}} To {{Dates.toDate | date}}</h3>
 
 <table>
   <tr>
-    <th>Customer Name</th>
-    <th>Customer Phone No</th>
-    <th>Delivered Quantity</th>
-    <th>Paymend Mode</th>
-    <th>Price ₹ </th>
+    <th translate="Customer_name"></th>
+    <th translate="Customer_number"></th>
+    <th translate="Delivered_Quantity"></th>
+    <th translate="கொடுப்பனவு முறை"></th>
+    <th><span translate="price"></span> ₹ </th>
   </tr>
   <tr ng-repeat="Delivery in Deliveries">
     <td>{{Delivery.customerName}}</td>
