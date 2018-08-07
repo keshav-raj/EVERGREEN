@@ -85,11 +85,11 @@
           </md-input-container>
           <div >
             <div class="clanderLabel" translate="From">From</div>
-            <md-datepicker md-min-date="minDate" md-max-date="maxDate" ng-model="fromDate" md-placeholder="Enter date"></md-datepicker>
+            <md-datepicker  md-min-date="minDate" md-max-date="maxDate" ng-model="fromDate"  md-placeholder="{{ 'Enter_Date' | translate  }}"></md-datepicker>
           </div>
           <div >
             <div class="clanderLabel" translate="To">To</div>
-            <md-datepicker md-min-date="minDate" md-max-date="maxDate" ng-model="toDate" md-placeholder="Enter date"></md-datepicker>
+            <md-datepicker md-min-date="minDate" md-max-date="maxDate" ng-model="toDate" md-placeholder="{{ 'Enter_Date' | translate  }}"></md-datepicker>
           </div>
           <div class="addCustBtnContainer">
             <md-button aria-label="EverGreen" class="md-raised md-primary addCustBtnContainer" ng-click="generateReport(fromDate, toDate)" >
