@@ -1,6 +1,5 @@
 angular.module('milkyWay').config(function($stateProvider, $urlRouterProvider,$translateProvider) {
 
-
   $translateProvider.registerAvailableLanguageKeys(['tn_IN','en_US'], {
     'en_US': 'en_US',
     'en_UK': 'en_US',
