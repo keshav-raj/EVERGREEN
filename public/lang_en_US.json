@@ -50,5 +50,8 @@
     "Invalid_Phone_number":"Invalid Phone number",
     "Selected_Quantity_is":"Selected Quantity is",
     "Payment_Mode":"Payment Mode",
-    "Delivery_Date":"Delivery Date"
+    "Delivery_Date":"Delivery Date",
+    "Select_the_Date":"Select Date",
+    "Past_Delivery_Data_Entry":"Past Delivery Data Entry",
+    "Delivery_Time":"Delivery Time"
 }

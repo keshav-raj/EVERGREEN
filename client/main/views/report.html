@@ -9,13 +9,15 @@
     <th translate="Customer_number"></th>
     <th translate="Delivered_Quantity"></th>
     <th translate="Payment_Mode"></th>
+    <th translate="Delivery_Time"></th>
     <th><span translate="price"></span> ₹ </th>
   </tr>
   <tr ng-repeat="Delivery in Deliveries">
-    <td>{{Delivery.deliveryDate | date }}</td>
+    <td>{{Delivery.deliveryDate | date : "dd_MM_y" }}</td>
     <td>{{Delivery.customerName}}</td>
     <td>{{Delivery.customerPhone}}</td>
     <td>{{Delivery.deliverQuantity}}</td>
+    <td>{{Delivery.paymentMode}}</td>
     <td>{{Delivery.deliveryTime}}</td>
     <td>{{Delivery.deliveryPrice}}</td>
   </tr>
@@ -26,7 +28,7 @@
        <div class=""><i class="fa fa-home" aria-hidden="true" ></i></div>
 </md-button>
 
-<md-button class="md-fab downloadBtnPosition" aria-label="EverGreen" ui-sref="downloadReport()">
+<md-button class="md-fab downloadBtnPosition" aria-label="EverGreen" ng-click="downloadReport()">
        <div class=""><i class="fa fa-download" aria-hidden="true" ></i></div>
 </md-button>
 
