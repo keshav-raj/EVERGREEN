@@ -51,6 +51,7 @@
     "Payment_Mode":"பணம் செலுத்திய முறை",
     "Delivery_Date":"வழங்கப்பட்ட தேதி",
     "Select_the_Date":"தேதியை தேர்ந்தெடுக்கவும்",
-    "Past_Delivery_Data_Entry":"கடந்தகால தகவல் பதிவு"
+    "Past_Delivery_Data_Entry":"கடந்தகால தகவல் பதிவு",
+    "Delivery_Time":"வழங்கப்பட்ட நேரம்"
 
 }
