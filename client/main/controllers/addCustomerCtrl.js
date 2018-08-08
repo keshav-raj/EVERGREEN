@@ -13,7 +13,7 @@ angular.module("milkyWay")
 
       $scope.addCustomer= function(){
         //console.log("name:"+$scope.user.custName);
-        let customerPhone = $scope.user.custNumber;
+        let customerPhone = '+91'+$scope.user.custNumber;
         //console.log(customerPhone.toString());
         let customerDetails ={
           name:$scope.user.custName,

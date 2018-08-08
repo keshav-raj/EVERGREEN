@@ -7,8 +7,8 @@
     <div class="formContainer">
       <div layout-gt-sm="row">
         <md-input-container class="md-block" flex-gt-sm>
-          <label translate="Email"></label>
-          <input type="email" ng-model="user.email">
+          <label translate="PhoneNo"></label>
+          <input type="number" ng-model="user.number">
         </md-input-container>
         <md-input-container class="md-block" flex-gt-sm>
           <label translate="Password"></label>
@@ -17,7 +17,6 @@
       </div>
     </div>
     <div class="text-center">
-      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  " ui-sref="home()" translate="Login"></md-button>
-      <md-button aria-label="EverGreen" ui-sref="signUp()" class="loginBtn "  style="rgb(63,81,181)" translate="Or_create_an_account"></md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn" ng-click="login()" translate="Login"></md-button>
     </div>
   </div>

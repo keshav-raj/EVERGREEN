@@ -1,6 +1,6 @@
 {
     "Login": "உள் நுழை",
-    "Email": "மின்னஞ்சல்",
+    "PhoneNo": "தொலைபேசி எண்",
     "Password": "கடவுச்சொல்",
     "Or_create_an_account":"அல்லது பதிவு செய்யவும்",
     "EverGreen":"பசுமையான",
@@ -43,5 +43,11 @@
     "Customer":"வாடிக்கையாளர்",
     "Quantity":"அளவு",
     "Delivered_Quantity":"வழங்கப்பட்ட அளவு",
-    "Paymend_Mode":"வழங்கப்பட்ட அளவு"
+    "Paymend_Mode":"வழங்கப்பட்ட அளவு",
+    "Customer_Name_is_required":"வாடிக்கையாளர் பெயர் தேவை",
+    "Customer_Number_is_required":"வாடிக்கையாளர் தொலைபேசி எண் தேவை",
+    "Invalid_Phone_number":"தொலைபேசி எண்ணைச் சரிபார்க்கவும்",
+    "Selected_Quantity_is":"தேர்ந்தெடுக்கப்பட்ட அளவு",
+    "Payment_Mode":"பணம் செலுத்திய முறை",
+    "Delivery_Date":"வழங்கப்பட்ட தேதி"
 }

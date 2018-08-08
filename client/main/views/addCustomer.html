@@ -9,11 +9,19 @@
       <div layout-gt-sm="row">
         <md-input-container  class="md-block" flex-gt-sm>
           <label translate="Customer_name">Customer Name</label>
-          <input type="text" ng-model="user.custName">
+          <input type="text" name="customerName" ng-model="user.custName" required>
+          <div ng-messages="customerForm.customerName.$error" role="alert">
+              <div ng-message="required"><span translate="Customer_Name_is_required">Customer Name is required!</span></div>
+          </div>
         </md-input-container>
         <md-input-container  class="md-block" flex-gt-sm>
           <label translate="Customer_number">Customer Number</label>
-          <input type="number" ng-model="user.custNumber">
+          <input type="number" name="customerNumber" ng-model="user.custNumber" required maxlength="10" minlength="10">
+          <div ng-messages="customerForm.customerNumber.$error" role="alert">
+              <div ng-message="required" ><span translate="Customer_Number_is_required">Customer Number is required!</span></div>
+              <div ng-message="minlength" ><span translate="Invalid_Phone_number">Invalid Phone number</span></div>
+              <div ng-message="maxlength" ><span translate="Invalid_Phone_number">Invalid Phone number</span></div>
+        </div>
         </md-input-container>
       </div>
     </div>

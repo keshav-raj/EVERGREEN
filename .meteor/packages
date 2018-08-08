@@ -28,3 +28,5 @@ planettraining:angular-translate
 planettraining:angular-translate-storage-cookie
 planettraining:angular-translate-loader-static-files
 angular:angular-cookies
+mys:accounts-phone
+check

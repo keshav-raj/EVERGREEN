@@ -1,6 +1,6 @@
 {
     "Login": "Login",
-    "Email": "Email",
+    "PhoneNo": "Phone Number",
     "Password": "Password",
     "Or_create_an_account":"OR CREATE AN ACCOUNT",
     "EverGreen":"Ever Green",
@@ -44,5 +44,11 @@
     "Customer":"Customer",
     "Quantity":"Quantity",
     "Delivered_Quantity":"Delivered Quantity",
-    "Paymend_Mode":"Paymend Mode"
+    "Paymend_Mode":"Paymend Mode",
+    "Customer_Name_is_required":"Customer Name is required",
+    "Customer_Number_is_required":"Customer Number is required",
+    "Invalid_Phone_number":"Invalid Phone number",
+    "Selected_Quantity_is":"Selected Quantity is",
+    "Payment_Mode":"Payment Mode",
+    "Delivery_Date":"Delivery Date"
 }

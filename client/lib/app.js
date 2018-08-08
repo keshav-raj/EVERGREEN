@@ -9,5 +9,6 @@ angular.module('milkyWay', [
   'ngAnimate',
   'ngMaterial',
   'pascalprecht.translate',
-   'ngCookies'
+   'ngCookies',
+   'ngMessages'
 ]);

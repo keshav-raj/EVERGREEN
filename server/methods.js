@@ -26,4 +26,15 @@
     return Customers.remove({'_id':data.customerId});
   },
 
+  checkUser: function(username){
+  check(username, String);
+
+  let usernameCheck = Meteor.users.findOne({ "phone.number": username })
+  if (usernameCheck){
+    throw new Meteor.Error('Mobile Number already Exists');
+  }
+  else {
+   return true;
+  }
+},
 });

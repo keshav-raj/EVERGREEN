@@ -1,15 +1,18 @@
+<div class="">
 <h2  translate="Report"></h2>
 <h3>{{Dates.fromDate | date}} To {{Dates.toDate | date}}</h3>
 
 <table>
   <tr>
+    <th translate="Delivery_Date"></th>
     <th translate="Customer_name"></th>
     <th translate="Customer_number"></th>
     <th translate="Delivered_Quantity"></th>
-    <th translate="கொடுப்பனவு முறை"></th>
+    <th translate="Payment_Mode"></th>
     <th><span translate="price"></span> ₹ </th>
   </tr>
   <tr ng-repeat="Delivery in Deliveries">
+    <td>{{Delivery.deliveryDate | date }}</td>
     <td>{{Delivery.customerName}}</td>
     <td>{{Delivery.customerPhone}}</td>
     <td>{{Delivery.deliverQuantity}}</td>
@@ -18,3 +21,13 @@
   </tr>
 
 </table>
+
+<md-button class="md-fab fabBtnPosition  " aria-label="EverGreen" ui-sref="home()">
+       <div class=""><i class="fa fa-home" aria-hidden="true" ></i></div>
+</md-button>
+
+<md-button class="md-fab downloadBtnPosition" aria-label="EverGreen" ui-sref="downloadReport()">
+       <div class=""><i class="fa fa-download" aria-hidden="true" ></i></div>
+</md-button>
+
+</div>

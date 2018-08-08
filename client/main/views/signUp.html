@@ -4,11 +4,14 @@
       <h1 class="headerText" translate="sign_up">Sign Up</h1>
     </div>
 
+    <form  name="registerFrom">
+
+
     <div class="formContainer">
       <div layout-gt-sm="row">
         <md-input-container class="md-block" flex-gt-sm>
-          <label translate="Email"></label>
-          <input type="email" ng-model="user.email">
+          <label translate="PhoneNo"></label>
+          <input type="number" ng-model="user.number">
         </md-input-container>
         <md-input-container class="md-block" flex-gt-sm>
           <label translate="Password"></label>
@@ -16,17 +19,10 @@
         </md-input-container>
       </div>
     </div>
+
     <div class="text-center">
-      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  " ui-sref="home()" translate="create_account"></md-button>
+      <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn  " ng-click="register()" translate="create_account"></md-button>
 
     </div>
+  </form>
   </div>
-
-  <!--
-  Copyright 2018 Google Inc. All Rights Reserved.
-  Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
-  -->
-<!--
-Copyright 2018 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
--->

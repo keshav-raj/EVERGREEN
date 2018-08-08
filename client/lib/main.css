@@ -218,6 +218,14 @@ right: 25px;
 background-color: #0D47A1 !important;
     font-size: 25px;
 }
+.downloadBtnPosition{
+  position: fixed;
+bottom: 35px;
+right: 100px;
+background-color: #0D47A1 !important;
+    font-size: 25px;
+}
+
 .colorTheme{
   background-color: #3F51B5 !important;
 }
