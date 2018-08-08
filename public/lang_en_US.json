@@ -44,5 +44,6 @@
     "Customer":"Customer",
     "Quantity":"Quantity",
     "Delivered_Quantity":"Delivered Quantity",
-    "Paymend_Mode":"Paymend Mode"
+    "Paymend_Mode":"Paymend Mode",
+    "Select_the_Date":"Select Date"
 }

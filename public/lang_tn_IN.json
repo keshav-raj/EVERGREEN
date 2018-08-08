@@ -43,5 +43,6 @@
     "Customer":"வாடிக்கையாளர்",
     "Quantity":"அளவு",
     "Delivered_Quantity":"வழங்கப்பட்ட அளவு",
-    "Paymend_Mode":"வழங்கப்பட்ட அளவு"
+    "Paymend_Mode":"வழங்கப்பட்ட அளவு",
+    "Select_the_Date":"தேதியை தேர்ந்தெடுக்கவும்"
 }

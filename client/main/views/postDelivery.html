@@ -44,7 +44,7 @@
 </section>
 
 <div class="" style=" min-height: 964px;">
-<div class="listItem "  ng-repeat="Customer in Customers | filter:customer.search" ui-sref="custDeteails({customerId: Customer._id})">
+<div class="listItem "  ng-repeat="Customer in Customers | filter:customer.search" ui-sref="customPostdeliver({customerId: Customer._id})">
   <div class="">
     <div class="custName"><h5 style="font-weight:bold"><i class="fa fa-user fn18" aria-hidden="true"></i> : {{Customer.name}} </h5></div>
     <div class="custPhone"><h6 style="font-size:14px ; font-weight:bold"><i class="fa fa-phone fn18" aria-hidden="true"></i> : {{Customer.phoneNo}}</h6></div>

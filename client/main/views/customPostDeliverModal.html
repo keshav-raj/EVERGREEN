@@ -1,0 +1,52 @@
+<div role="dialog"  layout="column" layout-align="center center">
+  <md-toolbar>
+    <div class="md-toolbar-tools colorTheme">
+      <h2 translate="Deliver"></h2>
+    </div>
+  </md-toolbar>
+
+  <div class="">
+    <h5 style="font-weight:bold" >Selected Quantity is {{ delivery.quantity }} Ltr </h5>
+  </div>
+
+  <div class="demo-dialog-content">
+    <div layout="row" >
+      <md-radio-group ng-model="data.paymentType">
+        <div class="radioContainer">
+          <div class="radioModal" >
+            <md-radio-button  value="cash"><span translate="Cash"></span></md-radio-button>
+          </div>
+          <div class="radioModal" >
+            <md-radio-button  value="credit"><span translate="Credit"></span></md-radio-button>
+          </div>
+        </div>
+      </md-radio-group>
+
+    </div>
+    <div layout="row" >
+      <md-radio-group ng-model="data.Time">
+        <div class="radioContainer">
+          <div class="radioModal" >
+            <md-radio-button  value="morning"><span translate="Morning"></span></md-radio-button>
+          </div>
+          <div class="radioModal" >
+            <md-radio-button  value="evening"><span translate="Evening"></span></md-radio-button>
+          </div>
+        </div>
+      </md-radio-group>
+
+    </div>
+
+
+
+  </div>
+
+  <div layout="row" class="demo-dialog-button">
+    <md-button aria-label="EverGreen" md-autofocus flex class="md-primary" ng-click="deliverItem(data)">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span translate="Deliver"></span>
+    </md-button>
+    <md-button aria-label="EverGreen"  flex class="md-primary" ng-click="ctrl.closeDialog()">
+      <i class="fa fa-times-circle" aria-hidden="true"></i> <span translate="Cancel"></span>
+    </md-button>
+  </div>
+</div>

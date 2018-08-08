@@ -70,6 +70,16 @@ angular.module('milkyWay').config(function($stateProvider, $urlRouterProvider,$t
       templateUrl: "client/main/views/custDeteails.html",
       controller: "custDeteailsCtrl"
     })
+    .state('postDelivery', {
+      url: "/postDelivery",
+      templateUrl: "client/main/views/postDelivery.html",
+      controller: "postDeliveryCtrl"
+    })
+    .state('customPostdeliver', {
+      url: "/customPostdeliver/:customerId",
+      templateUrl: "client/main/views/customPostdeliver.html",
+      controller: "customPostdeliverCtrl"
+    })
 
 
 });
