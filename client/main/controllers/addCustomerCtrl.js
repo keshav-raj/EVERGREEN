@@ -14,6 +14,12 @@ angular.module("milkyWay")
       $scope.addCustomer= function(){
         //console.log("name:"+$scope.user.custName);
         let customerPhone = '+91'+$scope.user.custNumber;
+        if((customerPhone.toString().length<13) || !$scope.user.custName){
+
+        alert("Customer name or number is invalid");
+
+        }else{
+
         //console.log(customerPhone.toString());
         let customerDetails ={
           name:$scope.user.custName,
@@ -29,4 +35,6 @@ angular.module("milkyWay")
         });
       }
 
-    });
+    }
+
+});
