@@ -14,7 +14,7 @@ angular.module('milkyWay', [
 ]);
 
 function onReady() {
-  angular.bootstrap(document, ['salephone']);
+  angular.bootstrap(document, ['milkyWay']);
   if(Meteor.isCordova){
     navigator.splashscreen.hide();
   }
