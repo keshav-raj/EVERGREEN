@@ -26,15 +26,36 @@
     return Customers.remove({'_id':data.customerId});
   },
 
-  checkUser: function(username){
+checkUser: function(email, username){
+  check(email, String);
   check(username, String);
+  let emailCheck = Accounts.findUserByEmail(email);
+  let usernameCheck = Accounts.findUserByUsername(username);
 
-  let usernameCheck = Meteor.users.findOne({ "phone.number": username })
-  if (usernameCheck){
-    throw new Meteor.Error('Mobile Number already Exists');
+  if (emailCheck) {
+    throw new Meteor.Error('Email Exists');
+  }
+  else if (usernameCheck){
+    throw new Meteor.Error('Username Exists');
   }
   else {
    return true;
   }
 },
+
+//Check if username exists.
+checkName: function(user) {
+  check(user, String);
+  if (
+    //Profile.find({ profID: { $ne: this.userId }, profName: user }).count() != 0 &&
+    Meteor.users.find({ _id: { $ne: this.userId }, username: user }).count() != 0
+  ) {
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+
+
 });

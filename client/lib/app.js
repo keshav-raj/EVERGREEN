@@ -1,5 +1,6 @@
-//import angular from 'angular';
-//import angularMeteor from 'angular-meteor';
+import { _meteorAngular } from 'meteor/angular';
+import { Meteor } from 'meteor/meteor';
+import angularMeteor from 'angular-meteor';
 //import ngMaterial from 'angular-material';
 //import ngAnimate from 'angular-animate';
 import uiRouter from 'angular-ui-router';
@@ -20,6 +21,7 @@ angular.module('milkyWay', [
 //   }
 // }
 //
+// console.log("MEteor cordova"+Meteor.isCordova);
 // if (Meteor.isCordova) {
 //   angular.element(document).on('deviceready', onReady);
 // } else {

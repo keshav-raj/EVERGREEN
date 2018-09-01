@@ -1,9 +1,11 @@
 
   <div  ng-app="milkyWay">
+     <md-content>
     <div class="headerDiv  ">
       <h1 class="headerText" translate="Login"></h1>
     </div>
 
+    <form  name="registerFrom">
     <div class="formContainer">
       <div layout-gt-sm="row">
         <md-input-container class="md-block" flex-gt-sm>
@@ -19,4 +21,6 @@
     <div class="text-center">
       <md-button aria-label="EverGreen" class="md-raised md-primary loginBtn" ng-click="login()" translate="Login"></md-button>
     </div>
+  </form>
+</md-content>
   </div>

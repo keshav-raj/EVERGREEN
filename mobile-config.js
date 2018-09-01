@@ -14,8 +14,9 @@ App.configurePlugin('phonegap-plugin-push', {
   SENDER_ID: 'xxx'
 });
 
-App.setPreference("AutoHideSplashScreen", "false");
+App.setPreference("AutoHideSplashScreen", "true");
 App.setPreference("ShowSplashScreenSpinner", "false");
+App.setPreference("SplashScreenDelay", "3000");
 
 App.icons({
   'android_mdpi': 'mobile/icons/evergreen_x48.png', //(48x48)

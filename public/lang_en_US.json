@@ -53,5 +53,6 @@
     "Delivery_Date":"Delivery Date",
     "Select_the_Date":"Select Date",
     "Past_Delivery_Data_Entry":"Past Delivery Data Entry",
-    "Delivery_Time":"Delivery Time"
+    "Delivery_Time":"Delivery Time",
+    "Email":"Email"
 }

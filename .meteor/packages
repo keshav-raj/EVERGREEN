@@ -19,7 +19,6 @@ autopublish@1.0.7             # Publish all data to the clients (for prototyping
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 angular-templates
 angular:angular-material
-twbs:bootstrap
 fortawesome:fontawesome
 nicolaslopezj:excel-export
 angularjs:angular-messages
@@ -27,7 +26,8 @@ planettraining:angular-translate
 planettraining:angular-translate-storage-cookie
 planettraining:angular-translate-loader-static-files
 angular:angular-cookies
-mys:accounts-phone
 check
 angular
 pbastowski:angular-babel
+accounts-password
+twbs:bootstrap

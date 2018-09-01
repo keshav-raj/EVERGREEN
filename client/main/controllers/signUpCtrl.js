@@ -27,18 +27,20 @@ angular.module("milkyWay")
         return;
       }
 
-      let username = '+91'+$scope.user.number
+      let email = $scope.user.email
+      var usernameNo = $scope.user.number
+      let username = usernameNo.toString();
       let password = $scope.user.password
-      if (   username && password   ){
+      if (   email && username && password   ){
 
-        Meteor.call('checkUser', username, function(err){
+        Meteor.call('checkUser', email, username, function(err){
         if(err){
-            if ( err.error === 'Mobile Number already Exists' ){
+            if ( err.error === 'Email already Exists' ){
 
               if (Meteor.isCordova) {
-                alert('Mobile Number already Exists');
+                alert('Email already Exists');
               } else {
-                alert('Mobile Number already Exists');
+                alert('Email already Exists');
               }
 
               return;
@@ -54,8 +56,9 @@ angular.module("milkyWay")
             }
           }
           else {
-  		        Accounts.createUserWithPhone({
-              phone: username,
+  		        Accounts.createUser({
+              email:email,
+              username: username,
               password: password
             },
             function(err){

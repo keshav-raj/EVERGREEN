@@ -1,3 +1,8 @@
+import { _meteorAngular } from 'meteor/angular';
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
+
+
 angular.module("milkyWay")
     .controller('loginCtrl', function($scope,$state,$stateParams,$meteor,$mdSidenav) {
 
@@ -23,11 +28,12 @@ angular.module("milkyWay")
         return;
       }
 
-      let username = '+91'+$scope.user.number
+      var usernameNo = $scope.user.number
+      let username = usernameNo.toString();
       let password = $scope.user.password
       if (   username && password   ){
 
-                Meteor.loginWithPhoneAndPassword(username, password, function(err){
+                  Meteor.loginWithPassword(username, password, function(err){
                   if (err) {
                     if (Meteor.isCordova) {
                       alert('Invalid Mobile Number or Password.');
